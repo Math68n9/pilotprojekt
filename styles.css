@@ -1,11 +1,10 @@
 * {
-  background-color: bisque;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@font-face {
-  font-family: myFont;
-  src: url(../05_font/arialRoundedBold.ttf);
-  font-weight: bold;
+body {
+  background-color: bisque;
 }
 
 main {
@@ -16,41 +15,94 @@ main {
   margin-right: 50px;
 }
 
-header nav ul {
+@media (min-width: 600px) {
+  header nav ul {
+    display: flex;
+    flex-flow: wrap;
+    gap: 60px;
+    list-style: none;
+    padding: 0;
+    overflow-x: auto;
+    color: white;
+  }
+}
+
+header {
   display: flex;
-  flex-flow: wrap;
+  font-size: 1.5vw;
   gap: 20px;
   list-style: none;
-  padding: 3%;
+  padding: 1rem 1rem;
   justify-content: center;
-  overflow-x: auto;
-  top: 0px;
+  top: 0;
   font-size: 2rem;
-  color: white;
   font-family: Arial;
-  opacity: 20%;
   position: sticky;
+  opacity: 50%;
+  box-shadow: 0 12px 30px 0 black;
+  background-color: rgb(127, 127, 133);
+}
 
-  background-color: rgb(3, 3, 63);
+.menu a:visited {
+  color: rgb(7, 7, 43);
 }
 
 h1 {
-  color: gray;
+  position: absolute;
+  top: 130%;
+  left: 4%;
+  color: rgb(13, 13, 95);
   font-family: "arial";
 }
 h2 {
-  color: gray;
+  color: rgb(13, 13, 95);
   font-family: "arial";
+  position: absolute;
+  top: 145%;
+  left: 4%;
+}
+
+h3 {
+  color: black;
+  position: absolute;
+  top: 150%;
+  left: 4%;
+}
+h4 {
+  color: rgb(13, 13, 53);
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 article {
   grid-column: 2;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr 1fr;
 }
 
 .content > p {
   color: black;
+  position: absolute;
+  top: 135%;
+  left: 4%;
+}
+.content1 > p {
+  color: black;
+  position: absolute;
+  top: 155%;
+  left: 4%;
+  column-count: 1;
+}
+
+.content2 > p {
+  color: black;
+  position: absolute;
+  top: 20%;
+  left: 4%;
+  column-count: 1;
 }
 
 p + figure {
@@ -64,8 +116,39 @@ p + figure {
 }
 
 .gallery img {
-  height: 100%;
-  object-fit: cover;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+#article .section_wrapper {
+  display: block;
+  width: 1320px;
+  margin: 8px;
+
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 600px) {
+  #article_section {
+    width: 228%;
+
+    height: 180vh;
+  }
+}
+
+@media (min-width: 600px) {
+  #gallery_section .section_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+  }
+  #gallery_section .col {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+  }
 }
