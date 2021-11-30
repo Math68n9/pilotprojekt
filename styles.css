@@ -72,24 +72,12 @@ h4 {
   color: rgb(13, 13, 53);
   position: absolute;
   top: 10%;
-  left: 50%;
+  left: 35%;
   font-size: 45px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-article {
-  grid-column: 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.content > p {
-  color: black;
-  position: absolute;
-  top: 135%;
-  left: 4%;
-}
-.content1 > p {
+.content1 {
   color: black;
   position: absolute;
   top: 155%;
@@ -97,7 +85,7 @@ article {
   column-count: 1;
 }
 
-.content2 > p {
+.content2 {
   color: black;
   position: absolute;
   top: 20%;
@@ -105,14 +93,11 @@ article {
   column-count: 1;
 }
 
-p + figure {
-  margin-top: 1rem;
-}
-
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 50px;
+  margin-bottom: 200px;
 }
 
 .gallery img {
@@ -161,6 +146,7 @@ section {
   margin-right: 10px;
   margin-bottom: 100px;
 }
+
 figure {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -169,4 +155,36 @@ figure {
 
 img {
   max-width: 100%;
+}
+
+.content {
+  background-image: url(stilbilleder/bredformat.jpg);
+  background-size: cover;
+  aspect-ratio: 16/9;
+}
+
+#text1 {
+  display: grid;
+  grid-column: 1fr 1fr;
+}
+
+#text12 {
+  display: grid;
+  grid-column: 1fr 1fr;
+}
+
+#text3 {
+  display: grid;
+  grid-column: 1fr;
+}
+
+Video {
+  width: 100%;
+}
+
+footer {
+  display: grid;
+  justify-content: start;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
