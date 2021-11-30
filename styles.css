@@ -144,7 +144,7 @@ img {
 }
 
 #section1 {
-  grid-column: none;
+  grid-column: 1;
 }
 
 .text1 {
