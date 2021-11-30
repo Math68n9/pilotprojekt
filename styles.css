@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 2px;
   box-sizing: border-box;
 }
 
@@ -48,8 +48,7 @@ header {
 }
 
 h1 {
-  position: absolute;
-  top: 130%;
+  top: 75%;
   left: 4%;
   color: rgb(13, 13, 95);
   font-family: "arial";
@@ -57,22 +56,17 @@ h1 {
 h2 {
   color: rgb(13, 13, 95);
   font-family: "arial";
-  position: absolute;
-  top: 145%;
-  left: 4%;
 }
 
 h3 {
   color: black;
   position: absolute;
-  top: 150%;
-  left: 4%;
+  top: 105%;
+  margin-left: 4%;
 }
 h4 {
+  text-align: center;
   color: rgb(13, 13, 53);
-  position: absolute;
-  top: 10%;
-  left: 35%;
   font-size: 45px;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -96,25 +90,13 @@ h4 {
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 50px;
+  gap: 10px;
   margin-bottom: 200px;
 }
 
 .gallery img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-#article .section_wrapper {
-  display: block;
-  width: 1320px;
-  margin: 8px;
-
-  height: 100%;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 @media (min-width: 600px) {
@@ -157,25 +139,36 @@ img {
   max-width: 100%;
 }
 
-.content {
-  background-image: url(stilbilleder/bredformat.jpg);
-  background-size: cover;
-  aspect-ratio: 16/9;
+.image1 {
+  grid-column: 1;
 }
 
-#text1 {
-  display: grid;
-  grid-column: 1fr 1fr;
+#section1 {
+  grid-column: none;
 }
 
-#text12 {
+.text1 {
+  display: grid;
+  grid-column: 1fr;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.text2 {
   display: grid;
   grid-column: 1fr 1fr;
+
+  padding-left: 4px;
+  padding-bottom: 20px;
 }
 
 #text3 {
   display: grid;
   grid-column: 1fr;
+  margin-left: 30px;
+  top: 200px;
+  padding-left: 4px;
+  padding-bottom: 20px;
 }
 
 Video {
