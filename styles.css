@@ -1,6 +1,5 @@
 * {
-  margin: 2px;
-  box-sizing: border-box;
+  margin: 3px;
 }
 
 body {
@@ -48,21 +47,20 @@ header {
 }
 
 h1 {
-  top: 75%;
-  left: 4%;
-  color: rgb(13, 13, 95);
+  color: rgb(13, 13, 53);
   font-family: "arial";
+  margin-top: 25px;
+  margin-left: 6px;
 }
 h2 {
-  color: rgb(13, 13, 95);
+  color: rgb(13, 13, 53);
   font-family: "arial";
+  margin-top: 5%;
+  margin-left: 6;
 }
 
 h3 {
   color: black;
-  position: absolute;
-  top: 105%;
-  margin-left: 4%;
 }
 h4 {
   text-align: center;
@@ -71,12 +69,11 @@ h4 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.content1 {
-  color: black;
-  position: absolute;
-  top: 155%;
-  left: 4%;
-  column-count: 1;
+h5 {
+  text-align: center;
+  color: rgb(13, 13, 53);
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .content2 {
@@ -148,16 +145,14 @@ img {
   grid-column: 1;
 }
 
-.text1 {
+/* #text1 {
   display: grid;
-  grid-column: 1fr;
-  padding-left: 20px;
-  padding-bottom: 20px;
+
+  padding-left: 20%;
 }
 
-.text2 {
+#text2 {
   display: grid;
-  grid-column: 1fr 1fr;
 
   padding-left: 4px;
   padding-bottom: 20px;
@@ -165,12 +160,12 @@ img {
 
 #text3 {
   display: grid;
-  grid-column: 1fr;
+
   margin-left: 30px;
   top: 200px;
   padding-left: 4px;
   padding-bottom: 20px;
-}
+} */
 
 Video {
   width: 100%;
@@ -181,4 +176,12 @@ footer {
   justify-content: start;
   padding-left: 20px;
   padding-bottom: 20px;
+}
+
+#hr {
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+#hr1 {
+  margin-top: 3%;
 }
