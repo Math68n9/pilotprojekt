@@ -141,6 +141,7 @@ img {
 
 .image1 {
   grid-column: 1;
+  top: 100px;
 }
 
 #section1 {
